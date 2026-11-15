@@ -1,0 +1,170 @@
+{
+  "dataset_metadata": {
+    "total_records": 5000,
+    "total_features": 12,
+    "numerical_features": [
+      "age",
+      "annual_income",
+      "loan_amount",
+      "interest_rate",
+      "credit_score",
+      "debt_to_income",
+      "emp_length",
+      "loan_status"
+    ],
+    "categorical_features": [
+      "applicant_id",
+      "loan_intent",
+      "loan_grade",
+      "cb_person_default_on_file"
+    ]
+  },
+  "missing_values": {
+    "counts": {
+      "applicant_id": 0,
+      "age": 0,
+      "annual_income": 0,
+      "loan_amount": 0,
+      "loan_intent": 0,
+      "loan_grade": 0,
+      "interest_rate": 0,
+      "credit_score": 0,
+      "debt_to_income": 0,
+      "cb_person_default_on_file": 0,
+      "emp_length": 0,
+      "loan_status": 0
+    },
+    "percentages": {
+      "applicant_id": 0.0,
+      "age": 0.0,
+      "annual_income": 0.0,
+      "loan_amount": 0.0,
+      "loan_intent": 0.0,
+      "loan_grade": 0.0,
+      "interest_rate": 0.0,
+      "credit_score": 0.0,
+      "debt_to_income": 0.0,
+      "cb_person_default_on_file": 0.0,
+      "emp_length": 0.0,
+      "loan_status": 0.0
+    }
+  },
+  "target_distribution": {
+    "counts": {
+      "0": 3564,
+      "1": 1436
+    },
+    "default_rate": 0.2872,
+    "default_percentage": "28.72%"
+  },
+  "numerical_statistics": {
+    "age": {
+      "mean": 43.9364,
+      "std": 13.5959,
+      "min": 21.0,
+      "p25": 32.0,
+      "median": 44.0,
+      "p75": 56.0,
+      "max": 67.0
+    },
+    "annual_income": {
+      "mean": 62200.94,
+      "std": 37122.8352,
+      "min": 18000.0,
+      "p25": 37100.0,
+      "median": 53000.0,
+      "p75": 76900.0,
+      "max": 300000.0
+    },
+    "loan_amount": {
+      "mean": 19808.42,
+      "std": 9280.0234,
+      "min": 2100.0,
+      "p25": 12400.0,
+      "median": 18600.0,
+      "p75": 26425.0,
+      "max": 44400.0
+    },
+    "interest_rate": {
+      "mean": 12.6013,
+      "std": 4.3087,
+      "min": 4.5,
+      "p25": 9.26,
+      "median": 11.985,
+      "p75": 15.51,
+      "max": 24.59
+    },
+    "credit_score": {
+      "mean": 674.423,
+      "std": 65.1772,
+      "min": 398.0,
+      "p25": 631.0,
+      "median": 675.0,
+      "p75": 718.0,
+      "max": 850.0
+    },
+    "debt_to_income": {
+      "mean": 0.5498,
+      "std": 0.321,
+      "min": 0.0858,
+      "p25": 0.3229,
+      "median": 0.4658,
+      "p75": 0.6836,
+      "max": 2.4376
+    },
+    "emp_length": {
+      "mean": 4.5622,
+      "std": 4.4431,
+      "min": 0.0,
+      "p25": 1.0,
+      "median": 3.0,
+      "p75": 6.0,
+      "max": 42.0
+    },
+    "loan_status": {
+      "mean": 0.2872,
+      "std": 0.4525,
+      "min": 0.0,
+      "p25": 0.0,
+      "median": 0.0,
+      "p75": 1.0,
+      "max": 1.0
+    }
+  },
+  "risk_segment_default_rates": {
+    "by_loan_grade": {
+      "A": 0.2073,
+      "B": 0.2467,
+      "C": 0.3056,
+      "D": 0.3895,
+      "E": 0.5116
+    },
+    "by_loan_intent": {
+      "DEBTCONSOLIDATION": 0.2838,
+      "EDUCATION": 0.2932,
+      "HOMEIMPROVEMENT": 0.2871,
+      "MEDICAL": 0.2944,
+      "PERSONAL": 0.2871,
+      "VENTURE": 0.2854
+    },
+    "by_prior_default": {
+      "N": 0.2308,
+      "Y": 0.5728
+    },
+    "by_credit_score_tier": {
+      "Poor (<580)": 0.6828,
+      "Fair (580-669)": 0.3587,
+      "Good (670-739)": 0.209,
+      "Excellent (740+)": 0.1055
+    }
+  },
+  "feature_correlations_with_default": {
+    "credit_score": -0.3362,
+    "debt_to_income": 0.3205,
+    "loan_amount": 0.2078,
+    "interest_rate": 0.179,
+    "annual_income": -0.1626,
+    "emp_length": -0.0685,
+    "age": -0.0146
+  }
+}
